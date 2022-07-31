@@ -52,7 +52,7 @@ function onClick(event) {
 
             // Extract ability information
             let abilityInfo = document.createElement('li');
-            abilityInfo.innerText = "Abilities: " + myJson.abilities[0].ability.name + ", " + myJson.abilities[1].ability.name;
+            abilityInfo.innerText = "Abilities: " + myJson.abilities[0].ability.name;
             infoContainer.append(abilityInfo);
 
 
