@@ -1,15 +1,16 @@
 
 html {
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 body, html{
     padding: 10;
     margin: 0;
-    font-family: 'Recursive', sans-serif;
+    font-family: "Lucida Console", "Courier New", monospace;
     background: #7474BF;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #e0e8ee, #d31ecd);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #e9ebed, #de1472); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #c4d6e7, #de1472); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     max-width: 100%;
     overflow-x: hidden;
     color: rgb(63, 48, 48);
@@ -18,45 +19,72 @@ body, html{
 
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     width: 100vw;
     margin: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.295);
-    font-family: "Lucida Console", "Courier New", monospace;
     padding: 15px;
     background-color: rgb(223, 112, 112);
     border: none; 
     text-align: center;
     color: white;
+    border: 1px solid whitesmoke;
+}
+
+.title {
+    display: flex;
+    justify-content: left;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.container {
+    display: block;
+    justify-content: space-around;
+    justify-items: normal;
 }
 
 .subContainer {
     padding: 20px;
     background-color: whitesmoke;
+    border-radius: 25px;
     margin: 20px;
     display: flex;
     justify-items: flex-start;
+    box-sizing: border-box;
+    overflow-x:hidden;
 }
 
 .form {
     padding: 20px;
+    display: flex;
+    color: white;
+    justify-content: center;
 }
 
-.pokemonImage {
+.pokemonImage, .pokemonImage2 {
     height: 100px;
     width: 100px;
     justify-self: left;
-    padding: 0px;
-    border: red solid 2px;
-    margin-right: 20px;
+    padding: 10px;
+    margin-right: 50px;
+    margin-top: 60px;
 }
 
-/* #pokemon_name {
-  justify-content: right;
-} */
+.pokemonInfo {
+    padding: 10px;
+    display: inline;
+}
 
-h2 {
+
+h3 {
     text-align: center;
+    text-shadow: black;
+    color: white;
+}
+
+h6 {
+    text-shadow: black;
 }
 
 .logo img{
